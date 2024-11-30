@@ -1,0 +1,49 @@
+body {
+    overflow-x: hidden;
+  }
+  
+  #wrapper {
+    display: flex;
+  }
+
+  .list-group-item {
+    border: none; /* Removes the borders */
+    padding-bottom: 25px;
+  } 
+   
+  #menu-toggle {
+    margin-left: 20px;
+  }
+
+  #logout{
+    margin-right: 25px;
+  }
+  
+  #sidebar-wrapper {
+    width: 250px;
+    height: 100vh;
+    transition: all 0.3s ease;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px; /* Hide the sidebar */
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    padding-left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  #page-content-wrapper.toggled {
+    margin-left: 0; /* Adjust content margin when sidebar is toggled */
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
